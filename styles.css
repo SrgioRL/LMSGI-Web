@@ -1,8 +1,10 @@
 #top-header {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px; 
+  border: 2px solid #ccc;
   background-color: #f2f2f2;
 }
 
@@ -14,4 +16,44 @@
 #top-header h1 {
   font: 30px sans-serif;
   color: #333;
+}
+
+#nav-table {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  
+}
+
+#nav-table td {
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+#nav-table a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#body-footer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  place-content: center;
+  align-content: center;
+  border: 2px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+#copyright {
+  display: flex;
+  place-content: center;
 }
