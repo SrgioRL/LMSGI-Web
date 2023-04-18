@@ -1,0 +1,17 @@
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#top-header img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+#top-header h1 {
+  font: 30px sans-serif;
+  color: #333;
+}
