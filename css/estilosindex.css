@@ -5,18 +5,22 @@ body {
   padding: 0;
   padding-top: 0;
   padding-bottom: 25px;
-}
-body {
-  background-color: #f7f7f7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 #Contenedor {
   min-height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(252, 240, 215, 0.4);
 }
+
 
 .cabecera {
   position: fixed;
