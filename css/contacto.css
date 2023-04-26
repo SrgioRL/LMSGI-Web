@@ -1,0 +1,91 @@
+@import url(index.css);
+
+.formulario {
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  margin: 25px auto;
+  text-align: center;
+  color: #ffffff;
+  background-color: #086075;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+}
+
+.formulario h2 {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  float: left;
+  padding-left: 10px;
+}
+
+input {
+  width: 450px;
+  height: 40px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #075669;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  resize: none;
+  width: 450px;
+  height: 150px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #075669;
+  margin-top: 10px;
+
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+#submit {
+  width: 450px;
+  height: 45px;
+  color: #ffffff;
+  background-color: #043a47;
+  border-color: #075669;
+  border-style: solid;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+#clear {
+  width: 450px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #043a47;
+  border-color: #075669;
+  border-style: solid;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 10px;
+}
