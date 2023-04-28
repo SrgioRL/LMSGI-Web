@@ -80,7 +80,6 @@ nav a {
 
 nav a:hover {
   background-color: #075669;
-  padding-top: 5px;
   border-radius: 5px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
@@ -125,6 +124,27 @@ main {
   margin-bottom: 40px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*---- ASIDE ----*/
+
+#patrocinadores {
+  width: 60%;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#patrocinadores h3 {
+  width: 25%;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#patrocinadores img{
+  margin-right: 10px;
 }
 
 /*---- BODY FOOTER ----*/
