@@ -97,6 +97,7 @@ main {
   margin-top: 35px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 #presentacion {
@@ -108,7 +109,8 @@ main {
   margin-bottom: 20px;
   padding: 10px;
   color: #cfdbe0;
-  background-color: rgba(83, 50, 50, 0.8);
+  background-color: rgba(83, 50, 50, 0.9);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 #presentacion p {
@@ -124,6 +126,7 @@ main {
   margin-bottom: 40px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*---- ASIDE ----*/
@@ -143,7 +146,7 @@ main {
   padding: 5px;
 }
 
-#patrocinadores img{
+#patrocinadores img {
   margin-right: 10px;
 }
 
