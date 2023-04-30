@@ -40,7 +40,7 @@
 
 .card p {
   text-align: justify;
-  width: 80%;
+  width: 90%;
   height: fit-content;
   margin: auto;
   padding-bottom: 15px;
@@ -51,13 +51,24 @@
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 
 @media screen and (min-width: 1300px) {
-  .nosotros article {
-    width: 95%;
-  }
+  
 
   .card {
     width: 30%;
     margin: 5px;
     font-size: 0.95em;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  .nosotros article {
+    display: block;
+    width: 95%;
+    margin-left: 65px;
+
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
   }
 }

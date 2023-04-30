@@ -5,6 +5,11 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+#contenedor {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
 
 body {
   width: 100%;
@@ -13,7 +18,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  overflow-x: hidden;
 }
 
 /*---- BODY HEADER ----*/
@@ -34,7 +38,7 @@ body {
 
 nav {
   position: relative;
-  width: 40%;
+  width: 45%;
   height: 50px;
   margin: auto;
   justify-content: space-around;
@@ -92,7 +96,6 @@ main {
 }
 
 .section-header {
-
   text-align: center;
   height: 50px;
   padding-top: 15px;
@@ -140,8 +143,10 @@ main {
   margin: 50px auto;
 }
 
-#patrocinadores h3 {
+#patrocinadores h3,
+#mapa h3 {
   width: 25%;
+  text-align: center;
   color: #ffffff;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -151,6 +156,11 @@ main {
 
 #patrocinadores img {
   margin-right: 10px;
+}
+
+#mapa {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 /*---- FOOTER ----*/
@@ -163,8 +173,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 5px 0;
-  width: 100%;
-  height: 125px;
+  height: fit-content;
   background-color: #086075;
 }
 
@@ -172,13 +181,12 @@ main {
   text-align: center;
   border-bottom: 2px solid #ffffff;
   width: 15%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .rrss img {
-  width: 40px; 
-  height: 40px; 
-  
+  width: 40px;
+  height: 40px;
 }
 
 .rrss img:hover {
@@ -189,8 +197,8 @@ main {
 
 .enlaces {
   align-items: center;
-  text-align: left;
-  margin: 5px;
+  text-align: center;
+  margin: 10px;
   width: 35%;
 }
 
@@ -214,21 +222,67 @@ main {
 .copy {
   color: #f7f7f7;
   font-size: 12px;
+  text-align: center;
 }
-
 
 /*----- DISEÑO RESPONSIVE -----*/
 
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 
 @media screen and (min-width: 1300px) {
-
-  main{
+  main {
     width: 100%;
   }
 
-  nav{
+  nav {
     width: 50%;
   }
 
+  nav a {
+    font-size: 1.2em;
+  }
+
+  #presentacion {
+    width: 50%;
+  }
+
+  #presentacion p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  main {
+    width: 100%;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+  #presentacion {
+    width: 90%;
+  }
+  #presentacion p {
+    font-size: 1.5em;
+  }
+  #patrocinadores h3 {
+    width: fit-content;
+    padding: 5px 30px;
+  }
+  .rrss {
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  .enlaces {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 35%;
+  }
 }

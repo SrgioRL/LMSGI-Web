@@ -4,8 +4,9 @@
   width: 500px;
   height: auto;
   padding: 10px;
-  margin: 25px auto;
+  margin: 70px auto;
   text-align: center;
+  font-size: 1.2em;
   color: #ffffff;
   background-color: #086075;
   border-radius: 8px;
@@ -17,6 +18,10 @@ fieldset {
   margin: 5px;
 }
 
+legend{
+  margin-bottom: 25px;
+}
+
 .formulario h2 {
   padding: 10px;
 }
@@ -24,7 +29,7 @@ fieldset {
 label {
   display: block;
   float: left;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 input {
@@ -105,3 +110,11 @@ p {
 
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 /* Por la estructura y tamaños de la página base, se adapta a esta resolución sin modificaciones*/
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  .formulario{
+    max-width: 75%;
+    font-size: 1.3em;
+  }
+
+}

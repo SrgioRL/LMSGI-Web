@@ -1,12 +1,13 @@
 @import url(index.css);
 
 .formulario {
-  width: fit-content;
-  max-width: 45%;
+ 
+  max-width: 40%;
   height: fit-content;
   padding: 20px;
-  margin: 25px auto;
+  margin: 70px auto;
   text-align: center;
+  font-size: 1.2em;
   color: #ffffff;
   background-color: #086075;
   border-radius: 8px;
@@ -135,3 +136,11 @@ p {
 
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 /* Por la estructura y tamaños de la página base, se adapta a esta resolución sin modificaciones*/
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  .formulario{
+    max-width: 60%;
+    font-size: 1.5em;
+  }
+
+}
