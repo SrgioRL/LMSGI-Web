@@ -34,7 +34,7 @@ body {
 
 nav {
   position: relative;
-  width: 600px;
+  width: 40%;
   height: 50px;
   margin: auto;
   justify-content: space-around;
@@ -88,9 +88,11 @@ nav a:hover {
 main {
   position: relative;
   width: 100%;
+  height: 100%;
 }
+
 .section-header {
-  position: relative;
+
   text-align: center;
   height: 50px;
   padding-top: 15px;
@@ -104,7 +106,7 @@ main {
   position: relative;
   margin: auto;
   text-align: justify;
-  width: 900px;
+  width: 50%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
@@ -133,7 +135,7 @@ main {
 /*---- ASIDE ----*/
 
 #patrocinadores {
-  width: 60%;
+  width: 90%;
   text-align: center;
   margin: 50px auto;
 }
@@ -151,9 +153,9 @@ main {
   margin-right: 10px;
 }
 
-/*---- BODY FOOTER ----*/
+/*---- FOOTER ----*/
 
-.main-footer {
+.web-footer {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -169,8 +171,14 @@ main {
 .rrss {
   text-align: center;
   border-bottom: 2px solid #ffffff;
-  width: 250px;
+  width: 15%;
   margin-bottom: 25px;
+}
+
+.rrss img {
+  width: 40px; 
+  height: 40px; 
+  
 }
 
 .rrss img:hover {
@@ -183,7 +191,7 @@ main {
   align-items: center;
   text-align: left;
   margin: 5px;
-  width: 750px;
+  width: 35%;
 }
 
 .enlaces ul,
@@ -206,4 +214,21 @@ main {
 .copy {
   color: #f7f7f7;
   font-size: 12px;
+}
+
+
+/*----- DISEÑO RESPONSIVE -----*/
+
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+
+@media screen and (min-width: 1300px) {
+
+  main{
+    width: 100%;
+  }
+
+  nav{
+    width: 50%;
+  }
+
 }

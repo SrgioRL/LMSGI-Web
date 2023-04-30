@@ -1,7 +1,8 @@
 @import url(index.css);
 
 .formulario {
-  width: 30%;
+  width: fit-content;
+  max-width: 45%;
   height: fit-content;
   padding: 20px;
   margin: 25px auto;
@@ -42,13 +43,24 @@ input {
   margin-bottom: 20px;
 }
 
-input[type="radio"], [type="checkbox"] {
+#contenedor-evento, #contenedor-mod{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+input[type="radio"],
+[type="checkbox"] {
   scale: 1.5;
   margin-right: 10px;
   margin-bottom: -3px;
 }
+input[type="date"]{
+  width: 50%;
+  }
 
-select, #año{
+select,
+#año {
   padding: 10px;
   text-align: center;
   border: 1px solid #aaaaaa;
@@ -57,11 +69,9 @@ select, #año{
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-select option{
+select option {
   text-align: center;
-
 }
-
 
 textarea {
   resize: none;
@@ -73,7 +83,6 @@ textarea {
   border-radius: 8px;
   padding: 5px;
   box-sizing: border-box;
-
 }
 
 #submit {
@@ -105,22 +114,24 @@ textarea {
   cursor: pointer;
 }
 
-
 p {
   font-size: 12px;
   margin-top: 10px;
 }
 
- #condiciones {
+#condiciones {
   margin: auto;
 }
 
 #condiciones input[type="checkbox"] {
   margin-top: 10px;
 }
-#condiciones a{
+#condiciones a {
   text-decoration: none;
   color: rgb(79, 247, 191);
 }
 
+/*----- DISEÑO RESPONSIVE -----*/
 
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+/* Por la estructura y tamaños de la página base, se adapta a esta resolución sin modificaciones*/

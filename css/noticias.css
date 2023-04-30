@@ -2,7 +2,7 @@
 
 .news-section {
   width: 60%;
-  height: 1500px;
+  height: auto;
   float: left;
   margin: 35px 0 25px 200px;
 }
@@ -73,4 +73,23 @@
 
 .aside-banner img {
   padding: 10px;
+}
+
+/*----- DISEÑO RESPONSIVE -----*/
+
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+
+@media screen and (min-width: 1300px) {
+  .news-section{
+    width: 65%;
+    margin: 20px 0 20px 70px;
+
+  }
+
+  .aside-banner{
+    width: 20%;
+    height: auto;
+    padding: 5px 0;
+    margin: 20px 60px;
+  }
 }
