@@ -13,8 +13,8 @@
 }
 
 fieldset {
-  border: none;
-  padding: 20px;
+  border-style: none;
+  margin: 5px;
 }
 
 .formulario h2 {
@@ -51,9 +51,21 @@ textarea {
   border-width: 2px;
   border-color: #075669;
   margin-top: 10px;
-
   padding-left: 10px;
   padding-top: 15px;
+}
+
+
+input[type="checkbox"] {
+  margin-top: 0;
+  scale: 0.5;
+}
+#condiciones{
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(79, 247, 191);
 }
 
 #submit {
@@ -64,14 +76,13 @@ textarea {
   border-color: #075669;
   border-style: solid;
   border-radius: 8px;
-  margin-top: 20px;
   padding-left: 5px;
   padding-right: 5px;
   cursor: pointer;
 }
 
 #clear {
-  width: 450px;
+  width: 55%;
   height: 30px;
   color: #ffffff;
   background-color: #043a47;
