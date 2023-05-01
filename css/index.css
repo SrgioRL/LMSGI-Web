@@ -317,6 +317,14 @@ Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño bas
   nav ul {
     flex-wrap: wrap;
   }
+
+  nav ul li:hover ul {
+    display: block;
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+  }
+
   .section-header {
     text-align: center;
     height: fit-content;
