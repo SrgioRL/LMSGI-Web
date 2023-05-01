@@ -175,15 +175,12 @@ Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño bas
   .aside-banner {
     height: fit-content;
     width: 80%;
-    background-color: antiquewhite;
-    border: 1px solid #8b4513;
     font-size: 1.1em;
   }
 
   .aside-banner div {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #8b4513;
     margin: 5px;
     justify-content: center;
   }
