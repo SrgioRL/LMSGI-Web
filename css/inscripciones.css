@@ -1,7 +1,6 @@
 @import url(index.css);
 
 .formulario {
- 
   max-width: 40%;
   height: fit-content;
   padding: 20px;
@@ -37,16 +36,17 @@ label {
 
 input {
   padding: 10px;
-  border: 1px solid #aaaaaa;
+  border: 2px solid #075669;
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
 
-#contenedor-evento, #contenedor-mod{
+#contenedor-evento,
+#contenedor-mod {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -56,22 +56,20 @@ input[type="radio"],
   margin-right: 10px;
   margin-bottom: -3px;
 }
-input[type="date"]{
+input[type="date"] {
   width: 50%;
-  }
+}
 
 select,
 #año {
   padding: 10px;
   text-align: center;
-  border: 1px solid #aaaaaa;
+  border: 2px solid #075669;
   border-radius: 5px;
   width: 50%;
   box-sizing: border-box;
   margin-bottom: 20px;
-}
-select option {
-  text-align: center;
+  
 }
 
 textarea {
@@ -86,17 +84,17 @@ textarea {
   box-sizing: border-box;
 }
 
+/*---- BOTONES ----*/
+
 #submit {
   width: 75%;
   height: 45px;
   color: #ffffff;
   background-color: #043a47;
-  border-color: #075669;
-  border-style: solid;
+  border: 2px solid #075669;
   border-radius: 8px;
   margin-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
   cursor: pointer;
 }
 
@@ -108,10 +106,8 @@ textarea {
   border-color: #075669;
   border-style: solid;
   border-radius: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin: 10px 0; 
+  padding: 0 5px;
   cursor: pointer;
 }
 
@@ -132,15 +128,37 @@ p {
   color: rgb(79, 247, 191);
 }
 
-/*----- DISEÑO RESPONSIVE -----*/
+/*----- DISEÑO RESPONSIVO -----*/
 
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 /* Por la estructura y tamaños de la página base, se adapta a esta resolución sin modificaciones*/
 
+
+/* Adaptación para tablets, usando de referencia iPad Air 
+(opción predefinida en las herramientas de desarrollador de Chrome.
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
 @media screen and (min-width: 820px) and (max-width: 1300px) {
-  .formulario{
+  .formulario {
+    
     max-width: 60%;
     font-size: 1.5em;
   }
+}
 
+/* Adaptación para móviles, usando de referencia iPhone 12 Pro 
+(opción predefinida en las herramientas de desarrollador de Chrome 
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+  .formulario {
+    max-width: 85%;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+
+  select,
+  #año,
+  input[type="date"] {
+    width: 75%;
+  }
 }

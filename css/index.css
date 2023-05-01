@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
+/* Se usará este index.css mediante @import como base para el resto de páginas, 
+con el objetivo de reducir la cantidad de líneas y elementos en cada hoja.
+
+En cada hoja de estlos se trabajará con los elementos propios de la misma, 
+teniendo las mismas propiedades importadas para el background, header, nav y footer. */
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 #contenedor {
   max-width: 1300px;
   margin: 0 auto;
@@ -69,7 +76,7 @@ nav ul li ul {
 
 nav ul li:hover ul {
   display: block;
-  width: 150px;
+  width: 20%;
   height: fit-content;
   padding: 10px;
 }
@@ -225,7 +232,10 @@ main {
   text-align: center;
 }
 
-/*----- DISEÑO RESPONSIVE -----*/
+/*----- DISEÑO RESPONSIVO -----*/
+
+/* Desde el diseño base, se ha tenido en cuenta el diseño responsivo 
+y la futura adaptación a dispositivos móviles, por lo que los ajustes son mínimos*/
 
 /* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
 
@@ -250,6 +260,10 @@ main {
     font-size: 1.2em;
   }
 }
+
+/* Adaptación para tablets, usando de referencia iPad Air 
+(opción predefinida en las herramientas de desarrollador de Chrome.
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
 
 @media screen and (min-width: 820px) and (max-width: 1300px) {
   main {
@@ -284,5 +298,61 @@ main {
     text-align: center;
     margin: 10px;
     width: 35%;
+  }
+}
+
+/* Adaptación para móviles, usando de referencia iPhone 12 Pro 
+(opción predefinida en las herramientas de desarrollador de Chrome 
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+  main {
+    width: 100%;
+  }
+  nav {
+    width: 80%;
+    height: fit-content;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+  .section-header {
+    text-align: center;
+    height: fit-content;
+    padding: 5px;
+  }
+
+  #presentacion {
+    width: 90%;
+  }
+
+  #patrocinadores h3,
+  #mapa h3 {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+  }
+
+  #patrocinadores img {
+    height: 70px;
+    margin: 5px;
+  }
+
+  #mapa iframe {
+    width: 98%;
+  }
+
+  .rrss {
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .enlaces {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 70%;
   }
 }
